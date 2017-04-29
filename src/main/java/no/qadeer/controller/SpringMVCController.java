@@ -12,8 +12,8 @@ public class SpringMVCController {
     PersonService service;
 
     @RequestMapping(method = RequestMethod.GET)
-    public Person getPerson() {
-        return service.getPerson(0);
+    public Person getPerson(@RequestParam long id) {
+        return service.getPerson(id);
     }
 
 
