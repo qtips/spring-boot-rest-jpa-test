@@ -14,6 +14,7 @@ public class Person {
     private String name;
     private int age;
 
+    // no need for public constructor as spring handles this using repository.
     Person() {}
 
     public Person(String name, int age) {
